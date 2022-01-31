@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#firstnav">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Shop</a>
+          </div>
+          <div id="firstnav" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav visible-lg">
+              <li><a href="#"><img src="/assets/icons/facebook.svg" alt=""></a></li>
+              <li><a href="#"><img src="/assets/icons/twitter.svg" alt=""></a></li>
+              <li><a href="#"><img src="/assets/icons/google.svg" alt=""></a></li>
+              <li><a href="#"><img src="/assets/icons/instagram.svg" alt=""></a></li>
+              <li><a href="#"><img src="/assets/icons/search.svg" alt=""></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><img src="/assets/icons/user-icon.svg" alt="">Log in</a></li>
+              <li><a href="#"><img src="/assets/icons/edit.svg" alt="">Register Now</a></li>
+              <li><a href="#"><img src="/assets/icons/cart.svg" alt="">0 Items - ($0.00)</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label>Select: Alert Interface</ion-label>
+              <ion-select class="custom-options">
+                <ion-select-option value="brown">Brown</ion-select-option>
+                <ion-select-option value="blonde">Blonde</ion-select-option>
+                <ion-select-option value="black">Black</ion-select-option>
+                <ion-select-option value="red">Red</ion-select-option>
+              </ion-select>
+            </ion-item>
+            
+            <ion-item>
+              <ion-label>Select: Alert Interface (Multiple Selection)</ion-label>
+              <ion-select class="custom-options" multiple="true">
+                <ion-select-option value="brown">Brown</ion-select-option>
+                <ion-select-option value="blonde">Blonde</ion-select-option>
+                <ion-select-option value="black">Black</ion-select-option>
+                <ion-select-option value="red">Red</ion-select-option>
+              </ion-select>
+            </ion-item>
+            
+            <ion-item>
+              <ion-label>Select: Popover Interface</ion-label>
+              <ion-select interface="popover" class="custom-options">
+                <ion-select-option value="brown">Brown</ion-select-option>
+                <ion-select-option value="blonde">Blonde</ion-select-option>
+                <ion-select-option value="black">Black</ion-select-option>
+                <ion-select-option value="red">Red</ion-select-option>
+              </ion-select>
+            </ion-item>
+            
+            <ion-item>
+              <ion-label>Select: Action Sheet Interface</ion-label>
+              <ion-select interface="action-sheet" class="custom-options">
+                <ion-select-option value="brown">Brown</ion-select-option>
+                <ion-select-option value="blonde">Blonde</ion-select-option>
+                <ion-select-option value="black">Black</ion-select-option>
+                <ion-select-option value="red">Red</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-searchbar show-cancel-button="focus"></ion-searchbar>
+          </ion-col>
+        </ion-row>
+      
+        
+      </ion-grid>
+   
+    </ion-card-content>
+    <ion-button (click)="DetailsMeIn()">order</ion-button>
+  </ion-card>
+</ion-content>
